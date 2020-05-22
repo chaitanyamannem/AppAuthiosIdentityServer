@@ -29,22 +29,11 @@ typedef void (^PostRegistrationCallback)(OIDServiceConfiguration *configuration,
 /*! @brief The OIDC issuer from which the configuration will be discovered.
  */
 //static NSString *const kIssuer = @"https://accounts.google.com";
-static NSString *const kIssuer = @"https://demo.identityserver.io";
-
-
-/*! @brief The OAuth client ID.
-    @discussion For client configuration instructions, see the README.
-        Set to nil to use dynamic registration with this example.
-    @see https://github.com/openid/AppAuth-iOS/blob/master/Examples/Example-iOS_ObjC/README.md
- */
 //static NSString *const kClientID = @"878180022764-bna77rh9cuq5a689db5pj2is6tnaqra7.apps.googleusercontent.com";
-static NSString *const kClientID = @"native.code";
-
-/*! @brief The OAuth redirect URI for the client @c kClientID.
-    @discussion For client configuration instructions, see the README.
-    @see https://github.com/openid/AppAuth-iOS/blob/master/Examples/Example-iOS_ObjC/README.md
- */
 //static NSString *const kRedirectURI = @"com.googleusercontent.apps.878180022764-bna77rh9cuq5a689db5pj2is6tnaqra7:/oauth2redirect/google";
+
+static NSString *const kIssuer = @"https://demo.identityserver.io";
+static NSString *const kClientID = @"native.code";
 static NSString *const kRedirectURI = @"io.identityserver.demo:/oauthredirect";
 
 /*! @brief NSCoding key for the authState property.
